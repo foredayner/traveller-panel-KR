@@ -21,7 +21,7 @@ Foundry VTT용 Mongoose Traveller 2nd Edition (MGT2e) 한국어 보조 모듈.
 |---|---|---|
 | 필수 | `mgt2e` (0.21.0+) | Mongoose Traveller 2e 시스템 |
 | 권장 | `traveller-toolkit` | 섹터 탭 서브섹터 지도 연동 |
-| 선택 | `traveller-chargen-sheet` | 피해 폴백 연동 |
+| 선택 | `traveller-chargen-sheet` | 피해 폴백 연동 |          -> 아직 작업중 (미완성)
 
 ## 설치
 
