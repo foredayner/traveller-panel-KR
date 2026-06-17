@@ -1,0 +1,43 @@
+{
+  "TRAVELLER": {
+    "ShipPanel": {
+      "Title": "트레블러 우주선 정보"
+    },
+    "Settings": {
+      "ButtonPosition": "패널 버튼 위치",
+      "ButtonPositionHint": "씬 컨트롤 내 우주선 패널 버튼의 위치를 설정합니다."
+    },
+    "Ship": {
+      "SelectPlaceholder": "-- 함선 선택 --",
+      "NamePlaceholder": "함선 이름 입력...",
+      "ExteriorView": "외부",
+      "InteriorView": "내부",
+      "UploadExterior": "외부 이미지 업로드",
+      "UploadInterior": "내부 이미지 업로드",
+      "NoImage": "이미지 없음",
+      "NoImageHint": "아래 버튼으로 업로드",
+      "SelectHint": "위의 드롭다운에서 우주선 종류를 선택하면 재원 정보가 표시됩니다."
+    },
+    "Stats": {
+      "Hull": "선체 (톤)",
+      "HullShape": "선체 형태",
+      "TL": "기술 수준 (TL)",
+      "Armor": "장갑",
+      "Durability": "내구도",
+      "Maneuver": "기동 드라이브",
+      "Jump": "점프 드라이브",
+      "Power": "동력 출력",
+      "Fuel": "연료 탱크 (톤)",
+      "FuelConsumption": "연료 소모",
+      "Bridge": "함교 (톤)",
+      "Computer": "컴퓨터",
+      "Sensors": "감지기",
+      "Weapons": "무기",
+      "Crew": "승무원",
+      "Staterooms": "선실",
+      "Cargo": "화물칸 (톤)",
+      "Maintenance": "유지비",
+      "Price": "구입 가격"
+    }
+  }
+}

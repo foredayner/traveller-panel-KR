@@ -1,0 +1,59 @@
+{
+  "id": "traveller-panel",
+  "title": "Traveller Panel",
+  "description": "트레블러 TTRPG 우주선 정보 패널 - 씬 위에 드래그 가능한 위젯",
+  "version": "3.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "14",
+    "maximum": "14"
+  },
+  "authors": [
+    {
+      "name": "foredayner"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "mgt2e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "0.21.0",
+          "verified": "0.21.0"
+        }
+      }
+    ],
+    "requires": [],
+    "recommends": [
+      {
+        "id": "traveller-chargen-sheet",
+        "type": "module",
+        "reason": "미설치 시 mgt2e 기본 시스템의 피해 필드(system.characteristics.X.damage)를 사용합니다. 설치 시 traveller-chargen-sheet 플래그로 피해가 연동됩니다."
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "styles": [
+    "styles/ship-panel.css"
+  ],
+  "languages": [
+    {
+      "lang": "ko",
+      "name": "한국어",
+      "path": "lang/ko.json"
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "license": "Mongoose Fair Use",
+  "flags": {
+    "legal": "The Traveller game in all forms is owned by Mongoose Publishing. Copyright 1977-2024 Mongoose Publishing. Traveller is a registered trademark of Mongoose Publishing. Mongoose Publishing permits web sites and fanzines for this game, provided it contains this notice, that Mongoose Publishing is notified, and subject to a withdrawal of permission on 90 days notice. The contents of this site are for personal, non-commercial use only."
+  },
+  "socket": true
+}

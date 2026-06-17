@@ -1,0 +1,21 @@
+{
+  "TRAVELLER": {
+    "ShipPanel": {
+      "Title": "Traveller Ship Information"
+    },
+    "Settings": {
+      "ButtonPosition": "Panel Button Position",
+      "ButtonPositionHint": "Set the position of the ship panel button in scene controls."
+    },
+    "Ship": {
+      "SelectPlaceholder": "-- Select Ship --",
+      "NamePlaceholder": "Enter ship name...",
+      "ExteriorView": "Exterior",
+      "InteriorView": "Interior",
+      "UploadExterior": "Upload Exterior Image",
+      "UploadInterior": "Upload Interior Image",
+      "NoImage": "No Image",
+      "NoImageHint": "Upload using the button below"
+    }
+  }
+}
