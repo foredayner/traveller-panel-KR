@@ -1,10 +1,10 @@
 {
-  "id": "traveller-panel",
-  "title": "Traveller Panel",
+  "id": "traveller-panel-KR",
+  "title": "Traveller Panel KR",
   "description": "트레블러 TTRPG 우주선 정보 패널 - 씬 위에 드래그 가능한 위젯",
   "version": "3.0.0",
-  "manifest": "https://raw.githubusercontent.com/foredayner/traveller-panel/main/module.json",
-  "download": "https://github.com/foredayner/traveller-panel/releases/download/v3.0.0/traveller-panel.zip",
+  "manifest": "https://raw.githubusercontent.com/foredayner/traveller-panel-KR/main/module.json",
+  "download": "https://github.com/foredayner/traveller-panel-KR/releases/download/v3.0.0/traveller-panel-KR.zip",
   "compatibility": {
     "minimum": "12",
     "verified": "14",

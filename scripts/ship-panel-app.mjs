@@ -28,7 +28,7 @@ export class ShipPanelWidget {
     // GM은 항상 가능
     if (this._isGM) return true;
     // 플레이어는 설정값 확인
-    return game.settings.get('traveller-panel', key) === true;
+    return game.settings.get('traveller-panel-KR', key) === true;
   }
 
   // ── 씬 키 ─────────────────────────────────────────────────
@@ -40,7 +40,7 @@ export class ShipPanelWidget {
   _sceneData(tab) {
     const cache = this._localCache[this._sceneKey];
     if (cache?.[tab]) return cache[tab];
-    const stored = game.settings.get('traveller-panel', 'shipData') ?? {};
+    const stored = game.settings.get('traveller-panel-KR', 'shipData') ?? {};
     return (stored[this._sceneKey] ?? {})[tab] ?? {};
   }
 
@@ -50,10 +50,10 @@ export class ShipPanelWidget {
     this._localCache[this._sceneKey][tab] = next;
 
     if (this._isGM) {
-      const all = game.settings.get('traveller-panel', 'shipData') ?? {};
+      const all = game.settings.get('traveller-panel-KR', 'shipData') ?? {};
       if (!all[this._sceneKey]) all[this._sceneKey] = {};
       all[this._sceneKey][tab] = next;
-      await game.settings.set('traveller-panel', 'shipData', all);
+      await game.settings.set('traveller-panel-KR', 'shipData', all);
     }
 
     game.socket.emit(this._socketName, {
@@ -180,17 +180,17 @@ export class ShipPanelWidget {
 
   // ── 저장된 함선 ───────────────────────────────────────────
   _getSavedShips() {
-    return game.settings.get('traveller-panel', 'savedShips') ?? {};
+    return game.settings.get('traveller-panel-KR', 'savedShips') ?? {};
   }
   async _saveShip(name, data) {
     const ships = this._getSavedShips();
     ships[name] = { ...data, savedAt: Date.now() };
-    await game.settings.set('traveller-panel', 'savedShips', ships);
+    await game.settings.set('traveller-panel-KR', 'savedShips', ships);
   }
   async _deleteShip(name) {
     const ships = this._getSavedShips();
     delete ships[name];
-    await game.settings.set('traveller-panel', 'savedShips', ships);
+    await game.settings.set('traveller-panel-KR', 'savedShips', ships);
   }
 
   // ── 우주선 패널 HTML ──────────────────────────────────────

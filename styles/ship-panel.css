@@ -2389,9 +2389,9 @@
 }
 
 /* ── Dialog 입력칸 전역 스타일 (어두운 배경, 흰 글씨) ── */
-#traveller-panel-dialog input[type="number"],
-#traveller-panel-dialog input[type="text"],
-#traveller-panel-dialog select,
+#traveller-panel-KR-dialog input[type="number"],
+#traveller-panel-KR-dialog input[type="text"],
+#traveller-panel-KR-dialog select,
 .dialog input[type="number"],
 .dialog input[type="text"],
 .dialog select,

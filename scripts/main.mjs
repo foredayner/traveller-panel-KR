@@ -1,12 +1,12 @@
 import { ShipPanelWidget } from './ship-panel-app.mjs';
 
-const SOCKET_NAME = 'module.traveller-panel';
+const SOCKET_NAME = 'module.traveller-panel-KR';
 let widget = null;
 
 Hooks.once('init', () => {
   console.log('Traveller Ship Panel | init');
 
-  game.settings.register('traveller-panel', 'shipData', {
+  game.settings.register('traveller-panel-KR', 'shipData', {
     name: 'Ship Panel Data',
     scope: 'world',
     config: false,
@@ -14,7 +14,7 @@ Hooks.once('init', () => {
     default: {}
   });
 
-  game.settings.register('traveller-panel', 'savedShips', {
+  game.settings.register('traveller-panel-KR', 'savedShips', {
     name: 'Saved Ships',
     scope: 'world',
     config: false,
@@ -23,7 +23,7 @@ Hooks.once('init', () => {
   });
 
   // ── 권한 설정 ──────────────────────────────────────────────
-  const perm = (name, label, def) => game.settings.register('traveller-panel', name, {
+  const perm = (name, label, def) => game.settings.register('traveller-panel-KR', name, {
     name: label,
     hint: '플레이어에게도 허용하려면 켜세요.',
     scope: 'world',
@@ -40,7 +40,7 @@ Hooks.once('init', () => {
   perm('permDeleteShip',        '함선 삭제 — 플레이어 허용',              false);
   perm('permTravellerRegister', '여행자 등록/삭제 — 플레이어 허용',       true);
 
-  game.settings.register('traveller-panel', 'tradeShowIllegal', {
+  game.settings.register('traveller-panel-KR', 'tradeShowIllegal', {
     name: '교역 — 불법 상품 표시 (GM만)',
     hint: '투기 무역 표에 불법 상품을 표시합니다. GM에게만 적용됩니다.',
     scope: 'world',
@@ -56,10 +56,10 @@ Hooks.once('ready', () => {
       // ── 플레이어 → GM: 저장 요청 ──────────────────────────
       // GM이 settings에 저장 후 전체에 재브로드캐스트
       if (payload.requestSave && game.user.isGM) {
-        const all = game.settings.get('traveller-panel', 'shipData') ?? {};
+        const all = game.settings.get('traveller-panel-KR', 'shipData') ?? {};
         if (!all[payload.sceneKey]) all[payload.sceneKey] = {};
         all[payload.sceneKey][payload.tab] = payload.data;
-        await game.settings.set('traveller-panel', 'shipData', all);
+        await game.settings.set('traveller-panel-KR', 'shipData', all);
 
         // 저장 완료 후 전체 브로드캐스트 (GM 포함 모든 클라이언트 갱신)
         game.socket.emit(SOCKET_NAME, {
@@ -100,7 +100,7 @@ Hooks.on('updateActor', () => {
 
 // 설정 변경 시 패널 즉시 갱신
 Hooks.on('updateSetting', (setting) => {
-  if (!setting.key?.startsWith('traveller-panel.perm')) return;
+  if (!setting.key?.startsWith('traveller-panel-KR.perm')) return;
   widget?.refreshScene();
 });
 

@@ -21,16 +21,16 @@ Foundry VTT용 Mongoose Traveller 2nd Edition (MGT2e) 한국어 보조 모듈.
 |---|---|---|
 | 필수 | `mgt2e` (0.21.0+) | Mongoose Traveller 2e 시스템 |
 | 권장 | `traveller-toolkit` | 섹터 탭 서브섹터 지도 연동 |
-| 선택 | `traveller-chargen-sheet` | 피해 폴백 연동 |          -> 아직 작업중 (미완성)
+| 선택 | `traveller-chargen-sheet` | 피해 폴백 연동 |
 
 ## 설치
 
 1. Foundry VTT → 모듈 관리 → 모듈 설치
 2. manifest URL 입력:
    ```
-   https://raw.githubusercontent.com/foredayner/traveller-panel/main/module.json
+   https://raw.githubusercontent.com/foredayner/traveller-panel-KR/main/module.json
    ```
-3. `traveller-panel` 폴더를 FVTT `modules/` 디렉토리에 복사
+3. `traveller-panel-KR` 폴더를 FVTT `modules/` 디렉토리에 복사
 
 ## 버전
 

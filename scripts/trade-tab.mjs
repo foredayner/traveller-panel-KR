@@ -225,7 +225,7 @@ export class TradeTab {
   async _save(p) { return this._widget._save(this._dataKey, p); }
 
   get _showIllegal() {
-    try { return game.settings.get('traveller-panel','tradeShowIllegal')&&game.user.isGM; }
+    try { return game.settings.get('traveller-panel-KR','tradeShowIllegal')&&game.user.isGM; }
     catch { return false; }
   }
   _getShipFund()         { return this._widget._sceneData('ship').shipFund??0; }
